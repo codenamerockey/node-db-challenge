@@ -40,11 +40,18 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
 
+relational database is a collection of data that can be retrieved quickly and manipulated and stored in tabular format. Sql is the language used to navigate and retrieve specific data from the relational database
+
 - [ ] Why do tables need a `primary key`?
+
+Because every record in the table needs to be specific and allowed to be located by its index.
 
 - [ ] What is the name given to a table column that references the primary key on another table.
 
+A foriegn key
+
 - [ ] What do we need in order to have a _many to many_ relationship between two tables.
+      A third table with foriegn keys pointing to each table you want to reference.
 
 ## Minimum Viable Product
 
