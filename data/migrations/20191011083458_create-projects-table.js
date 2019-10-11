@@ -3,11 +3,14 @@ exports.up = function(knex) {
     .createTable('projects', tbl => {
       tbl.increments();
       tbl.string('name', 255).notNullable();
+      tbl.text('description');
+      tbl.boolean('completed').notNullable();
     })
     .createTable('tasks', tbl => {
       tbl.increments();
       tbl.text('description').notNullable();
       tbl.text('notes');
+      tbl.boolean('completed').notNullable();
 
       // need FK that references the PK on projects
       tbl
